@@ -1,0 +1,35 @@
+<!-- header.html -->
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/header.css' %}">
+<script defer src="{% static 'script/header.js' %}"></script>
+<header class="header">
+    <div class="logo-title">
+        <img src="{% static '\images\IPS WHITE batch 1.png' %}" alt="IPS Logo" class="logo">
+        <h1 class="mokoto-text">IPS Tech Community</h1>
+    </div>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li class="mokoto-text"><a href="#home">Home</a></li>
+            <li class="mokoto-text"><a href="#about">About</a></li>
+            <li class="mokoto-text"><a href="#projects">Projects</a></li>
+            <li class="mokoto-text"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button class="join-btn">Join Community</button>
+
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <span class="menu-icon">&#9776;</span> <!-- Hamburger icon -->
+    </button>
+
+    <nav id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMobileMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+        </ul>
+    </nav>
+</header>
