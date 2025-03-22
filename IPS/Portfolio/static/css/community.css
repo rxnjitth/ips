@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+}
+.community
+{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 7em;
+}
+.comm1{
+    position: sticky;
+    top: 10%;    
+}
+.comm2{
+    position: sticky;
+    top: 25%;
+}
+.comm3{
+    position: sticky;
+    top: 40%;
+}
+.comm4{
+    position: sticky;
+    top: 55%;
+}
+.comm5{
+    position: sticky;
+    top: 70%;
+}
+.ips-tech{
+    position: absolute;
+    font-size: 0.3em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+    font-weight: 600;
+}
+.box{
+    position: absolute;
+    top: 150%;
+    background-color: #000;
+    height: 250px;
+    width: 250px;
+}
+@media (max-width:768px)
+{
+    .community{
+        width: 100%;
+        font-size: 5.5em;
+    }
+    .comm5{
+        margin-top: 50px;
+    }
+}
+@media (max-width:480px){
+    .community{
+        font-size: 3em;
+        line-height: 5vh;
+    }
+    .comm4{
+        margin-top: 50%;
+    }
+    .comm5{
+        margin-top: 25%;
+    }
+
+}
