@@ -1,10 +1,12 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPS TECH Community</title>
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -56,7 +58,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/community2.png" alt="Community Img" class="rounded-img">
+                    <img src="{% static 'images/community2.png' %}" alt="Community Img" class="rounded-img">
                 </div>
             </div>
         </div>
@@ -83,7 +85,7 @@
         </div>
         <div class="about-content container">
             <div class="about-image">
-                <img src="assets/aboutImg.png" alt="Image">
+                <img src="{% static 'images/aboutImg.png' %}" alt="Image">
             </div>
             <div class="about-text">
                 <h1 class="mokoto-text">Connect your tools, close your tabs</h1>
@@ -154,7 +156,7 @@
         
         <div class="section-divider">
             <a href="#contact">
-                <img src="assets/section.png" alt="Image">
+                <img src="{% static 'images/section.png' %}" alt="Image">
             </a>
         </div>
 
@@ -211,7 +213,6 @@
             <p>&copy; 2025 IPS TECH. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="static/script/index.js"></script>
+    <script src="{% static 'script/index.js' %}"></script>
 </body>
 </html>
