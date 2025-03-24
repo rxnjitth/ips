@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join IPS Tech Community</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="IPS-WHITE-batch.png" alt="IPS Tech Community">
+        </div>
+
+        <h2 class="title">IPS Tech Community</h2>
+
+        <!-- Form -->
+        <form id="joinForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Academic Year</label>
+                <select id="year" name="year" required>
+                    <option value="">Select Year</option>
+                    <option value="1st Year">1st Year</option>
+                    <option value="2nd Year">2nd Year</option>
+                    <option value="3rd Year">3rd Year</option>
+                    <option value="4th Year">4th Year</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="AI & DS">AI & DS</option>
+                    <option value="AIML">AIML</option>
+                    <option value="CSBS">CSBS</option>
+                    <option value="CSE">CSE</option>
+                    <option value="CYS">CYS</option>
+                    <option value="ECE">ECE</option>
+                    <option value="IT">IT</option>
+                    <option value="MECH">MECH</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Technical Interests</label>
+                <textarea id="interest" name="interest" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Proficient In</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="proficientIn" value="Python"> Python</label>
+                    <label><input type="checkbox" name="proficientIn" value="C"> C</label>
+                    <label><input type="checkbox" name="proficientIn" value="C++"> C++</label>
+                    <label><input type="checkbox" name="proficientIn" value="Rust"> Rust</label>
+                    <label><input type="checkbox" name="proficientIn" value="Go"> Go</label>
+                    <label><input type="checkbox" name="proficientIn" value="JavaScript"> JavaScript</label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Join the Community</button>
+        </form>
+
+        <p id="successMessage" class="hidden">🎉 Thank you for joining! We'll be in touch soon.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
