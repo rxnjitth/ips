@@ -1,0 +1,143 @@
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .animate-slideInUp {
+            animation: slideInUp 0.5s ease-out forwards;
+        }
+
+        .animate-bounce {
+            animation: bounce 1s infinite;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+
+        .bg-gradient-custom {
+            background: linear-gradient(to bottom right, #1a202c, #1e3a8a, #6b21a8);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #f3f4f6, #1e1b18);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background-color: rgb(243, 244, 246);
+            backdrop-filter: blur(4px);
+            border-radius: 0.5rem;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(55, 65, 81, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .input-container:hover, .input-container:focus-within {
+            border-color: #3b82f6;
+        }
+
+        .input-container:focus-within {
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+        }
+
+        .custom-input {
+            width: 100%;
+            background-color: transparent;
+            color: black;
+            font-size: 1.125rem;
+            transition: all 0.3s ease-in-out;
+            outline: none;
+        }
+
+        .custom-input::placeholder {
+            color: #6b7280;
+        }
+
+        .dropdown-container {
+            position: relative;
+        }
+
+        .skill-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.125rem 0.625rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            background-color: #dbeafe;
+            color: #1e40af;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            z-index: 10;
+            margin-top: 0.25rem;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-height: 15rem;
+            overflow-y: auto;
+        }
+
+        .dropdown-item {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .dropdown-item:hover {
+            background-color: #eff6ff;
+        }
+
+        .dropdown-item.selected {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .submit-button {
+            width: 100%;
+            background: linear-gradient(to right, #06b6d4, #2563eb);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .submit-button:hover:not(:disabled) {
+            background: linear-gradient(to right, #0891b2, #1d4ed8);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .submit-button:disabled {
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+    
